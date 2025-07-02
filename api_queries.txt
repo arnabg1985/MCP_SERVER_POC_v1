@@ -1,0 +1,11 @@
+http://localhost:5000/logs?app_name=StockTraderPro&log_level=exception
+http://localhost:5000/logs?app_name=MarketAnalyzer&start_date=2025-06-01&end_date=2025-06-20
+http://localhost:5000/logs?server=srv-app01&severity=critical
+http://localhost:5000/logs?limit=10
+
+
+http://192.168.0.130:5001/logs?app_name=StockTraderPro&log_level=exception
+
+http://192.168.0.130:5001/logs/?limit=50
+
+python mcp_server_logs.py --transport sse --port 8008
